@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btHora = new System.Windows.Forms.Button();
             this.btFecha = new System.Windows.Forms.Button();
             this.btTodo = new System.Windows.Forms.Button();
@@ -96,9 +97,9 @@
             // 
             this.btConectar.Location = new System.Drawing.Point(499, 26);
             this.btConectar.Name = "btConectar";
-            this.btConectar.Size = new System.Drawing.Size(102, 53);
+            this.btConectar.Size = new System.Drawing.Size(155, 53);
             this.btConectar.TabIndex = 5;
-            this.btConectar.Text = "Conectar";
+            this.btConectar.Text = "Cambiar IP o puerto";
             this.btConectar.UseVisualStyleBackColor = true;
             this.btConectar.Click += new System.EventHandler(this.btConectar_Click);
             // 
@@ -151,9 +152,9 @@
             this.Controls.Add(this.btApagar);
             this.Controls.Add(this.btFecha);
             this.Controls.Add(this.btHora);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Text = "Server Info";
             this.ResumeLayout(false);
             this.PerformLayout();
 
